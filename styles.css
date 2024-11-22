@@ -11,6 +11,9 @@ body {
   font-family: 'Courier New', Courier, monospace;
   overflow: hidden; /* Hide overflow to prevent scrolling */
   background-color: black; /* Set background color to black */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none
 }
 
 /* Define custom cursor */
