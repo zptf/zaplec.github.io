@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/gif" href="./assets/images/icon.gif">
+
+  <meta property="og:url" content="https://zaplec.pt">
+  <meta property="og:title" content="@zaplec">
+  <meta property="og:description" content="A mi madre siempre protejo, no como tú que vives por las perco.">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
+</head>
+
+<body class="custom-cursor">
+  <!-- Terminal Window -->
+  <div id="terminal" class="custom-cursor">
+    <div id="terminal-header">
+      <div id="terminal-buttons">
+        <!-- Terminal Control Buttons -->
+        <div class="terminal-button" id="close-button"></div> <!-- Close button -->
+        <div class="terminal-button" id="minimize-button"></div> <!-- Minimize button -->
+        <div class="terminal-button" id="maximize-button"></div> <!-- Maximize button -->
+      </div>
+    </div>
+    <div id="terminal-content">
+      <p id="terminal-text"></p> <!-- Terminal text content -->
+    </div>
+  </div>
+  <!-- Background Elements -->
+  <div id="video-background">
+    <video autoplay muted loop id="myVideo"> <!-- Video background -->
+      <source src="./assets/back/beny.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div id="audio-background">
+      <audio autoplay loop id="myAudio"> <!-- Audio background -->
+        <source src="./assets/music/beny.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div id="blurred-box">
+      <img src="./assets/pfp/beny.jpg" alt="Profile Picture"> <!-- Profile picture -->
+      <p id="username" style="color: white; font-weight: bold; font-size: large;">zaplec</p> <!-- Username -->
+      <!-- User Description -->
+      <div class="user-description">
+        <p id="user-description" style="color: white;"> Yo soy sincero </p>
+      </div>
+      <!-- Links -->
+      <div class="links">
+        <a href="https://discord.com/users/928009509866192946" target="_blank">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://github.com/zptf" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://steamcommunity.com/id/cartaenblanco" target="_blank">
+          <i class="fa-brands fa-steam"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script> <!-- Script for functionality -->
+  <script src="./assets/js/title.js"></script> <!-- Script for title functionality -->
+</body>
+
+</html>
