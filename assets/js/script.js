@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (i < line.length) {
               terminalText.textContent += line.charAt(i);
               i++;
-              setTimeout(typeChar, 50);
+              setTimeout(typeChar, 20);
           } else {
               terminalText.textContent += "\n";
               currentIndex++;
