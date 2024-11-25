@@ -167,8 +167,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30%; /* Adjust width as needed */
-  height: 40%; /* Adjust height as needed */
+  width: 20%; /* Adjust width as needed */
+  height: 33%; /* Adjust height as needed */
   background-color: rgba(255, 255, 255, 0); /* Transparent background */
   border-radius: 20px; /* Rounded corners */
   border: 2px solid rgba(255, 255, 255, 0); /* Dark border with transparency */
@@ -188,7 +188,7 @@ body {
 
 /* Profile picture styles */
 #blurred-box img {
-  width: 100px; /* Adjust size as needed */
+  width: 100; /* Adjust size as needed */
   height: 100px; /* Adjust size as needed */
   border-radius: 10%; /* Rounded corners */
   margin-bottom: 20px; /* Adjust margin as needed */
@@ -231,16 +231,31 @@ body {
 
 /* User Description styles */
 .user-description {
-  margin-bottom: 20px; /* Adjust margin as needed */
+  display: flex;
+  justify-content: center; /* Centraliza a caixa horizontalmente */
+  align-items: center; /* Centraliza a caixa verticalmente */
+  margin-bottom: 10px; /* Ajuste da margem inferior */
+  width: auto; /* Ajusta a largura da div conforme necessário */
+  min-width: 280px; /* Largura mínima para garantir um tamanho adequado */
+  padding: 15px; /* Aumenta o padding para tornar a div maior */
+  border-radius: 10px; /* Aumenta o arredondamento das bordas */
 }
 
 .user-description p {
-  margin: 0; /* Remove default margin */
-  padding: 10px; /* Add padding */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  margin: 0;
+  padding: 10px 15px; /* Aumenta o padding dentro da caixa de texto */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s;
+  font-size: 14px;
+  max-width: 300px; /* Ajuste o limite de largura conforme necessário */
+  text-align: center; /* Centraliza o texto dentro da caixa */
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassa */
+  text-overflow: ellipsis; /* Exibe '...' se o texto for muito longo */
 }
+
+
 
 /* User description hover effect */
 .user-description:hover p {
