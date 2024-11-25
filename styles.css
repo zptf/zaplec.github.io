@@ -23,17 +23,15 @@ body {
 
 /* Terminal styles */
 #terminal {
-  position: fixed; /* Fixed position to keep it always visible */
-  top: 50px; /* Adjust initial top position as needed */
-  left: 50px; /* Adjust initial left position as needed */
-  width: 600px; /* Fixed width */
-  height: 400px; /* Fixed height */
-  background-color: #1e1e1e; /* Terminal background color */
-  color: #ffffff; /* Terminal text color */
-  border-radius: 10px; /* Rounded corners */
-  z-index: 1000; /* Ensure it's above other elements */
+  border-radius: 10px;
+  color: white;
   border: 2px solid #4d4d4d; /* Terminal border color */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Terminal shadow */
+  background-color: #1e1e1e; /* Terminal background color */
+  width: 90%; /* Usar largura relativa */
+  max-width: 600px; /* Limitar a largura máxima */
+  height: auto; /* Ajustar a altura automaticamente */
+  max-height: 400px; /* Limitar a altura máxima */
+  margin: 10px auto; /* Centralizar com margem */
 }
 
 @media screen and (max-width: 600px) {
